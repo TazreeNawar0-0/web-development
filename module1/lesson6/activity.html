@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms in Html</title>
+    </head>
+    <body>
+        <h1>Doctor's Appointment</h1>
+        <p>Fill in the form below to book your appointment!</p>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>Patient Info</legend>
+                <label>Name: <input type="text" name="name" id="name"></label><br><br>
+                <label>Patient Id: <input type="password" name="pid" id="pid"></label><br><br>
+                <label>Date of Birth: <input type="date" name="dob" id="dob"></label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Your Visit</legend>
+                <label>Choose your doctor</label><br>
+                <select id="doctor">
+                    <option value="">--Select your doctor--</option>
+                    <option value="Dr.Smith">Dr.Smith</option>
+                    <option value="Dr.Johnson">Dr.Johnson</option>
+                    <option value="Dr.William">Dr.William</option>
+                </select>
+                <br><br>
+                <label>Reason for Visit</label><br>
+                <input type="radio" name="Fever" id="Fever">Fever<br>
+                <input type="radio" name="Food Poisoning" id="Food Poisoning">Food Poisoning<br>
+                <input type="radio" name="Other Reasons" id="Other Reasons">Other Reasons<br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Book my appointment">
+        </form>
+    </body>
+</html>
