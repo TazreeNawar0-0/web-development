@@ -1,0 +1,28 @@
+body {
+background-color: rgb(226, 149, 165);
+background-image: linear-gradient(to bottom, crimson, rgb(226, 149, 165));
+background-repeat: no-repeat;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer_text{
+    background-image: linear-gradient(to top, coral, rgb(235, 164, 138));
+    border-radius: 12px;
+text-align: center;
+}
+.page_header h2{
+text-align: center;
+}
+.fun_facts h2{
+    text-align: center;
+}
+.star{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(185, 71, 96);
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle{
+    from {background-color: rgb(185, 71, 96);}
+    to {background-color: antiquewhite;}
+}
