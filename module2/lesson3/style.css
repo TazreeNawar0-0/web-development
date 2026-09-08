@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(rgb(235, 34, 67),pink);
+    background-repeat: no-repeat;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.kid-name {
+    text-shadow: 3px 3px palevioletred;
+    font-style: italic;
+}
+.tagline {
+    text-shadow: 3px 3px palevioletred;
+    font-style: italic;
+}
+.label {
+    text-shadow: 3px 3px rgb(182, 119, 140);
+        font-style: italic;
+    text-decoration: underline;
+}
+.powers {
+    text-shadow: 3px 3px rgb(243, 154, 184);
+        font-style: italic;
+}
+.weakness {
+text-shadow: 3px 3px rgb(231, 53, 112);
+    font-style: italic;
+}
+.badge {
+    text-shadow: 3px 3px rgb(231, 53, 112);
+        font-style: italic;
+}
+.made-by {
+    text-shadow: 3px 3px rgb(231, 53, 112);
+        font-style: italic;
+}
