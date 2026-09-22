@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(235, 108, 146);
+    font-family: Arial, sans-serif;
+}
+.fact-file {
+    background-color: rgb(240, 59, 95);
+    color: rgb(94, 3, 26);
+    width: 260px;
+    border: 4px solid ;
+    padding: 25px;
+    margin: 20px;
+}
+.animal-name {
+    color: rgb(230, 187, 196);
+}
+.detail{
+    color: rgb(148, 7, 54);
+}
