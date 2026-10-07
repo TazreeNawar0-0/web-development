@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Advanced Selectors</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <title>My Food Menu</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eb5d75;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f8a7c6;
+        }
+
+        /* Sibling Selector - styles the paragraph right after h1 */
+        h1+p {
+            background: #df578b;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #dfcbc5;
+            display: inline-block;
+        }
+
+        ul {
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        /* Child Selector - styles only direct li children of ul */
+        ul>li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #970c41;
+            padding: 10px 20px;
+            margin: 6px auto;
+            width: 260px;
+            background: #e995b5;
+            border-radius: 8px;
+        }
+
+        /* nth-child - highlights the 3rd item as Chef's Special */
+        ul li:nth-child(3) {
+            background: #e04848;
+            color: #e6c1a9;
+        }
+
+        .desc {
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* first-letter - makes the first letter big and bold */
+        .desc::first-letter {
+            font-size: 220%;
+            color: #e60060;
+            font-weight: bold;
+        }
+
+        .links {
+            margin-top: 25px;
+        }
+
+        /* Hover Effect - links glow when mouse moves over them */
+        a {
+            color: #e60026;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0 12px;
+            padding: 8px 18px;
+            border: 2px solid #5f142b;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background: #e60073;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
         <h1><i>🌺Cozmo's Food Menu🌺</i></h1>
         <p>🌺Pick your favourite dish and dig in!🌺</p>
         <ul>
@@ -21,4 +102,6 @@
             <a href="">🌺See More🌺</a>
         </div>
     </body>
-</html>
+    
+    </html>
+    
