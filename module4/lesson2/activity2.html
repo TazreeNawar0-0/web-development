@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scope of functions</title>
+    </head>
+    <body>
+        <button onclick="myfunction()">click the goofy button</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            //gbl var
+            var a = 67
+            function myfunction() {
+                //lcl var
+                var b = 7;
+                document.getElementById("demo").innerHTML = a*b
+            }
+            document.getElementById("demo1").innerHTML = a*b
+        </script>
+    </body>
+</html>
