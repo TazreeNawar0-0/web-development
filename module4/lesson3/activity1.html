@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>methods in JS</title>
+    </head>
+    <body>
+     <h2>JS methods</h2>   
+     <p>Basic methods</p>
+
+     <script>
+        var word ="TaMaZiNg"
+
+        // convert the string to Uppercase
+        document.write("Uppercase:" + word.toUpperCase());
+        document.write("<br>");
+
+        // convert the string to Lowercase
+            document.write("Lowercase:" + word.toLowerCase());
+            document.write("<br>");
+
+        // check whether the string starts with "T" 
+                document.write("Starts with 'T':" + word.startsWith('T'));
+                document.write("<br>");
+
+        // check whether a new string contains the word "new"
+        var word2 = "This is a new string";
+        var pattern = new RegExp("new");
+        var result = pattern.test(word2);
+        document.write("Contains new..."  + result);
+     </script>
+</html>
