@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object in js</title>
+    </head>
+    <body>
+        <h1>My Phone Contact</h1>
+        <div>
+            <h4>Contact Info</h4>
+            <ul>
+                <li>Name: <span id="name"></span></li>
+                <li>Phone Number: <span id="phone"></span></li><li>City: <span id="city"></span></li>
+            </ul>
+        </div>
+        <script>
+            const myContact = {
+                name: "Farzana",
+                phone: "01717040978",
+                city: "Dhaka"
+            }
+            const nameEl = document.getElementById("name")
+            nameEl.textContent = myContact.name
+            const phoneEl = document.getElementById("phone")
+                phoneEl.textContent = myContact.phone
+            const cityEl = document.getElementById("city")
+                    cityEl.textContent = myContact.city
+        </script>
+    </body>
+</html>
