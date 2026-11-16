@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My zoo</title>
+        <style>
+            body {
+                font-family:cursive;
+                text-align: center;
+                background-color: rgb(228, 164, 177);
+                padding: 30px;
+            }
+            h1{
+                color:rgb(241, 238, 240)
+            }
+            #zoo {
+                border: 2px solid rgb(235, 102, 128);
+                width: 300px;
+                margin: 16px auto;
+                padding: 12px;
+                border-radius: 10px;
+                background: white;
+            }
+            .zone {
+                border: 1px solid pink;
+                margin: 8px;
+                padding: 8px;
+                border-radius: 5px;
+            }
+            button {
+                background: rgb(228, 69, 100);
+                color: rgb(252, 202, 202);
+                border: none ;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🌺My zoo🌺</h1>
+        <p>🌺Use JS and the DOM to add animals to each cage!🌺</p>
+        <div id="zoo">
+            <div class="zone">🌺Zone 1🌺: <span id="zone1"></span></div>
+            <div class="zone">🌺Zone 2🌺: <span id="zone2"></span></div>
+            <div class="zone">🌺Zone 3🌺: <span id="zone3"></span></div>
+            <div class="zone">🌺Total animals🌺: <span id="total"></span></div>
+        </div>
+        <br>
+        <button onclick="Openzoo()">🌺Open the zoo!🌺</button>
+        <p id="zoo-status"></p>
+        <script>
+           function Openzoo(){
+             document.getElementById("zone1").innerHTML = "Budgies";
+               document.getElementById("zone2").innerHTML = "Penguins";
+               document.getElementById("zone3").innerHTML = "Peacocks";
+             document.getElementById("total").innerHTML = "67";
+             document.getElementById("zoo").style.backgroundColor= "pink"
+               document.getElementById("zoo-status").innerHTML = "🌺My zoo is open now!🌺";
+           }
+        </script>
+    </body>
+</html>
