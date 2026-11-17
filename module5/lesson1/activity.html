@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game Profile</title>
+    </head>
+    <body>
+        <h1>🌺My Game Profile🌺</h1>
+        <button onclick="showProfile()">🌺Show Poof🌺</button>
+        <div>🌺Name🌺: <span id="name"></span></div>
+        <div>🌺Score🌺: <span id="score"></span></div>
+        <div>🌺Top Score🌺: <span id="top"></span></div>
+        <div>🌺Rank🌺: <span id="rank"></span></div>
+        <div>🌺Greeting🌺: <span id="greeting"></span></div>
+        <div>🌺Stars🌺: <span id="stars"></span></div>
+        <div>🌺Bonus lvl🌺: <span id="bonus"></span></div>
+        <div>🌺Team Name🌺: <span id="team"></span></div>
+
+        <script>
+            function showProfile() {
+                var name ="Tazree Pro";
+                var myScore = 100;
+                var highscore = 100;
+                var bonus = null;
+                var team = "Pinky flowery Tazree gang"; 
+                
+                document.getElementById("name").innerHTML = name;
+
+                document.getElementById("score").innerHTML = myScore + " out of " + highscore;
+
+                document.getElementById("bonus").innerHTML = bonus;
+
+                document.getElementById("team").innerHTML = team;
+
+                 var isTopScore = myScore == highscore;
+                 document.getElementById("top").innerHTML = isTopScore;
+
+                 var rank;
+                 if (myScore >=80) {
+                    rank = "gold"; 
+                 }
+
+                 else if (myScore >=50) {
+                    rank = "silver";
+                 }
+
+                 else {
+                    rank = "bronze";
+                 }
+
+                 document.getElementById("rank").innerHTML = rank;
+
+            }
+        </script>
+    </body>
+</html>
